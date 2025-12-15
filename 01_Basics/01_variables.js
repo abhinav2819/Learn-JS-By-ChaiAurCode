@@ -22,3 +22,5 @@ accountCity = "Los Angeles"
 
 // Displaying the variables in a table format
 console.table([accountId, accountName, accountPassword, accountCity])
+
+//summary: In this code, we demonstrated the use of const and let for variable declaration, highlighting their immutability and mutability respectively. We also discussed why using var and undeclared variables is discouraged.
