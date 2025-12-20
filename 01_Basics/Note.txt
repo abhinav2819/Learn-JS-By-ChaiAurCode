@@ -1,0 +1,12 @@
+Remember that:
+1.
+ when we say we are using any property then it means we not need to provide perenthises with it.
+for example: if we take 
+                        const newString = "Abinav"
+                        console.log(newString.length) Output : 6
+            Therefore we are using property hear and .length is a property
+And when we are using any function then it means it will have to provide perenthises with it.
+for example: if we take 
+                        const otherNumber = 123.5794
+                        console.log(otherNumber.toPrecision()); Output : 124
+            Therefore we are using the function hear
