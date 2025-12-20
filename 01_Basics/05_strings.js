@@ -3,10 +3,10 @@ const title = "Raj"
 
 //This way of concatenation is called as 'String Concatenation'
 //In modern JavaScript, we can also use Template Literals (Template Strings) to achieve the same result in a more readable way.
-// console.log(myName + title + " loves AK");
+console.log(myName + title + " loves AK");
 
 //Using Template Literals
-// console.log(`Hey I am: ${myName} and my title is: ${title} who loves AK`);
+console.log(`Hey I am: ${myName} and my title is: ${title} who loves AK`);
 
 //Another way of taking string as object
 
@@ -15,11 +15,11 @@ console.log(gameName);
 //Hear string is created as an object using String constructor, due to which it has additional properties and methods because the string is wrapped in a String object and stored in the key value pair format.
 
 //If we try to see the type of gameName, we will found that it is of type 'object' instead of 'string'
-// console.log(typeof gameName);
+console.log(typeof gameName);
 
 //To see the key value pair format we can use our browser console by opening inspect
 // we can use below code to see the properties and methods of the String object.
-// console.log(Object.getOwnPropertyNames(gameName.__proto__));
+console.log(Object.getOwnPropertyNames(gameName.__proto__));
 
 //Different types of using String Methods
 

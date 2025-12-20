@@ -45,7 +45,7 @@ const bigNumber = 9007199254740991n; //BigInt
 //Check for the symbol datatype
 const sym1 = Symbol('123');
 const sym2 = Symbol('123');
-// console.log(sym1 === sym2); // false, as each symbol is unique
+console.log(sym1 === sym2); // false, as each symbol is unique
 
                             //Non-Primitive Datatypes in JavaScript(Call by Reference)
 /*Means the data we get is the reference of the original data stored in the memory when we assign it to another variable */
@@ -62,7 +62,7 @@ let myObj = {                                //Object
 const myFuntion = function() {          //Function
     // console.log("Hello, World!");
     //This will return funtion as type but function is also a type of object in JavaScript
-    // console.log(typeof myFuntion);
+    console.log(typeof myFuntion);
 }
 //To check the datatype of a variable we use 'typeof' operator
 console.log(typeof num); //number
