@@ -1,7 +1,6 @@
 //To declare a object we have two different ways
 //                                       a)Object Literals 
 //                                       b)Object Constructor (Singleton Ojects are formed using this)
-//Object.create - To declare a object using constructor
 
 //The only difference between these two is taht when we create objects using constructor then those are thw singleton objects but this is not applied for the literals object creation where we can use instances of it any where
 
