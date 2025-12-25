@@ -126,21 +126,62 @@ const users = [
 ]
 
 //In this way we can access the first value of in array which is a object and then we can access the properties of the object
-console.log(users[1].email);
+// console.log(users[1].email);
 
 //Some other methods
 
 //We use Object.keys and Object.values to get the data and try to use loop through
 //We get output in array
-console.log(Object.keys(tinderUser));//We took all the keys in an array and we use loop on it and use it further where we wanted to use
-console.log(Object.values(tinderUser));//Similarly
+// console.log(Object.keys(tinderUser));//We took all the keys in an array and we use loop on it and use it further where we wanted to use
+// console.log(Object.values(tinderUser));//Similarly
 //Less used
-console.log(Object.entries(tinderUser));//We will get array in array
+// console.log(Object.entries(tinderUser));//We will get array in array
 
 //To check whether you have this value or not
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
-console.log(tinderUser.hasOwnProperty('isLogged'));//false
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
+// console.log(tinderUser.hasOwnProperty('isLogged'));//false
 
                 //--------- To get more information about the properties or the prototype 
                 //consider going and tring on the browser-> inspect -> console ----------
+
+
+//Destructuring of Objects
+
+const course = {
+    coursename: "JS in Hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+//Comman way of accessing a property from the objects
+//course.courseInstructor
+
+//we have some different way destructure the data and use it 
+//If we wanted to print the above property 3 times than i have to write that command line three times which is lot of boilerplate code so to avoid that we use extracting values from the object and using simply shown in belows line
+const {courseInstructor} = course
+//we can aslo assign new variable that can be used effciently any where
+const {coursename: cn} = course
+console.log(courseInstructor);
+console.log(cn);
+
+//Lets talk about JSON format 
+
+/* {
+    "name": "hitesh",
+    "coursename": "JS in Hindi",
+    "Price": "free"
+} */
+
+//When we get data from the backend we will be getting data in array containing numbers of objects and we use those objects for forwarding the data to the browser by rendring and destructuring that.(API is used for fetching the data from the bcakend and modifing it accordingly and showing back to browser)
+//This is the workflow of how a fullstack application runs
+/* - JavaScript is a browser‑based language (it runs inside the browser).
+- When you build a frontend app (React, Angular, Vue, or plain JS), that JavaScript code is loaded in the browser.
+- When the user triggers an action (like clicking a button or loading a page), the JavaScript code sends a request using an API method (fetch, axios, etc).
+- That request goes to the backend REST API (Spring Boot in your case).
+- The backend processes the request (controller → service → database) and sends back data (usually JSON).
+- The JavaScript code receives that data, formats it, and updates the UI.
+- Finally, the browser displays the updated UI to the user. */
+
+/* So the connection is:
+Browser (runs JS) → JavaScript API call → Backend REST API → Backend responds → JavaScript updates UI → Browser shows it. */
